@@ -1,7 +1,7 @@
 
 function post(){
 const url= 'http://localhost:8080/users';
-        fetch(url, {
+        fetch(url,   {   
 
             method: 'POST',
             headers:{
