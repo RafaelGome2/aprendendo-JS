@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo JS</title>
+     
     <style>
                 body{
             text-align: center;
@@ -14,14 +15,18 @@
     <h1>Aprendendo JS</h1>
    <p id= "texto">    </p>
     <button id="texto2" onclick="funçao()">click</button>
-    <form  method = "post" id="nomeId" >
+    <form  method = "post"  >
         <label for="nome"> Nome: </label>
-        <input type="text" name="nome" id="nameId">
-        <button type="button" onclick="getName()">enviar</button>
+        <input  id="nameId" type="text"  placeholder="digite aqui">
+        <button id="meuBotao" onclick="getName()" type="button" >enviar</button>
     </form>
+    <div> result:
+<label id="resultado" > </label>
+
+    </div> 
 
 
 
- <Script src="JS/index.js"> </Script>   
+ <Script src="index.js"> </Script>   
 </body>
 </html>

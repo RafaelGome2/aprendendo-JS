@@ -10,8 +10,14 @@ document.getElementById("texto").innerHTML=
  {document.getElementById("texto2").innerHTML=
  pote3;}
 
- function getName(){
-  let  objName =document.getElementById(nomeId);
-    alert(objName);
- }
+ async function getName(){
+      let valorDigitado = document.getElementById("nameId").value;
+       console.log(valorDigitado);
+      document.getElementById("resultado").innerText=valorDigitado;
+      
+        }
+  
+    
+    
+   
  
