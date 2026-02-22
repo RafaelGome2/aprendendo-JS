@@ -5,6 +5,13 @@ let pote3 = "macarrão";
 
 document.getElementById("texto").innerHTML=
  pote;
- function funçao(){document.getElementById("texto2").innerHTML=
+
+ function funçao()
+ {document.getElementById("texto2").innerHTML=
  pote3;}
+
+ function getName(){
+  let  objName =document.getElementById(nomeId);
+    alert(objName);
+ }
  
