@@ -6,9 +6,16 @@
     <title>Aprendendo JS</title>
      
     <style>
-                body{
+        
+                body{ background-color: grey;
             text-align: center;
         }
+        input{
+            border-radius: 5px;
+            width: 180px;
+           
+        }
+        
     </style>
 </head>
 <body>
@@ -16,15 +23,21 @@
    <p id= "texto">    </p>
     <button id="texto2" onclick="funçao()">click</button>
     <form  method = "post"  >
-        <label for="nome"> Nome: </label>
+        <label  for="nome"> Nome: </label>
         <input  id="nameId" type="text"  placeholder="digite aqui">
-        <button id="meuBotao" onclick="getName()" type="button" >enviar</button>
+        <!--<button id="meuBotao" onclick="getName()" type="button" >enviar</button>-->
     </form>
-    <div> result:
-<label id="resultado" > </label>
+    
+    <form method="post">
+        <label for="cpf"> Cpf:</label>
+        <input type="number"  id="cpfId" placeholder="digite aqui">
+        <p></p>
+        <button id="cpfId" type="button" onclick="getName()">Salvar</button>
 
+    </form>
+<div> result:
+<label  id="resultado"  > </label>
     </div> 
-
 
 
  <Script src="index.js"> </Script>   

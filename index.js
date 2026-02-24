@@ -1,7 +1,8 @@
-var pote = "bolachas";
-const pote2 = "bolacha salgada";
-let pote3 = "macarrão";
-//alert(pote3 +" e "+ pote);
+
+var eleitor, idade;
+idade=40;
+eleitor =  idade>=16 ? "eleitor" : "não eleitor"
+alert(eleitor);
 
 document.getElementById("texto").innerHTML=
  pote;
@@ -11,11 +12,14 @@ document.getElementById("texto").innerHTML=
  pote3;}
 
  async function getName(){
-      let valorDigitado = document.getElementById("nameId").value;
-       console.log(valorDigitado);
+      let valorDigitado=document.getElementById("nameId").value ;
+      let valorDigitado2 = document.getElementById("cpfId").value ;
+
+       console.log(valorDigitado, valorDigitado2);
       document.getElementById("resultado").innerText=valorDigitado;
-      
-        }
+            }
+
+
   
     
     
