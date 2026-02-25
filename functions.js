@@ -33,3 +33,8 @@ document.getElementById("texto")
         let obj = document.getElementById("div1");
         obj.style.backgroundColor = "aqua";
     }
+
+    function limpa(){
+      document.getElementById("input1").value ="" ;
+
+    }
