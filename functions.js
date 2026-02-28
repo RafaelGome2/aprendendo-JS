@@ -36,5 +36,4 @@ document.getElementById("texto")
 
     function limpa(){
       document.getElementById("input1").value ="" ;
-
     }
