@@ -22,5 +22,5 @@ function menorNumero(array){
     }
     //document.getElementById("texto").innerHTML = menorNumero(numeros);
 
-    let numerosFilter= numeros.filter(value>5);
+    
   document.getElementById("texto").innerHTML = numerosFilter;
