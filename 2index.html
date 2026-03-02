@@ -10,19 +10,20 @@
             border-radius: 5px;
             width: 180px;
     }
-    button{ height:20px;
-    width: 80px;}
+    button{ height:60px;
+    width: 120px;
+}.stop{background:  tomato;}
+.start{ background: green;}
     </style>
 </style>
 </head>
 
 <body >
     
-    <h1>aprendendo javaScript</h1>
-    <label ></label>Cor:</label>
-    <input placeholder="digite uma cor" id="cor"  type="text" >
-    <button onclick="verificar()" > salvar</button>
-    <p id="textoDefault"></p>
-<script src="switch.js"></script>
+    <h1>Controle de tempo</h1>
+   <h2 id ="tempo">0</h2>
+   <button class="start" onclick="ativar()" style="font-weight: 600;"> ativar contagem</button>
+   <button class="stop" onclick="parar()" style="font-weight: 600;">parar contagem</button>
+<script src="setTime.js"></script>
 </body>
 </html>
