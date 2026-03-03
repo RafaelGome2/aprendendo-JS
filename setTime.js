@@ -13,6 +13,8 @@
      },1000);
     }
 
+
        function parar(){
         clearInterval(tempo);
      }
+       
