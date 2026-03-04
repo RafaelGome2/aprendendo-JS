@@ -23,15 +23,12 @@ const campoEmail= document.querySelector('#email');
 const campoCpf= document.querySelector('#cpf');
 
 form.addEventListener('submit',function(event){
-    event.preventDefault();
-    const input =[campoNome.value, campoCidade.value , campoEmail.value, campoCpf.value] ;
-     
-        const jsonTxt = {
-        "nome" : input[0],
-        "cidade" : input[1],
-        "email": input[2],
-        "cpf": input[3]
+   event.preventDefault();
+   const input= {cidade: campoCidade.value, Nome: campoNome.value, Email: campoEmail.value, CPF: campoCpf.value  };
+   
+   const jsontxt= JSON.stringify(input);
+   console.log(jsontxt);
+    form.reset ();//para limpar o formulario 
     }
-   const jsonObj = JSON.stringify(jsonTxt);
-   console.log(jsonObj);
-})
+  
+   )
