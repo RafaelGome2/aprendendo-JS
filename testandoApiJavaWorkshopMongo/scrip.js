@@ -1,10 +1,29 @@
 
 // aprendendo sobre Promises :https://www.youtube.com/watch?v=hhDSKhCEzzM&t=1781s
+const { rejects } = require('assert');
+const { resolve } = require('dns');
+
 const fs = require('fs');
 
 console.log(1);
+// criaçao da Promise!!
+const readFile= file=> new Promise((resolve, rejects)=>
+{fs.readFile(file,(err, contents) => {
+    if(err){
+       reject(err) ;
+    }else{
+        resolve(contents);
+     }
+    }
+ ) }
+);
 
-
+readFile('msg.txt').then(contents => {
+    console.log(String(contents));
+    return readFile('msg2.txt').then(contents =>{
+        console.log(String(contents));
+    })
+})
 
 console.log(2);
 console.log(3);
