@@ -18,13 +18,16 @@ const readFile= file=> new Promise((resolve, rejects)=>
  ) }
 );
 
-readFile('msg.txt').then(contents => {
+/*readFile('msg.txt').then(contents => {
     console.log(String(contents));
     return readFile('msg2.txt').then(contents =>{
         console.log(String(contents));
     })
-})
+})*/
 
+const init = async()=>{};
+
+console.log(init());
 console.log(2);
 console.log(3);
 
