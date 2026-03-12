@@ -23,3 +23,4 @@ fetch('https://jsonplaceholder.typicode.com/posts',{
    )
    .then((json)=>console.log(json))
 
+   
